@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="">
+    <div class="container w-screen h-screen bg-blue-600 flex flex-col items-center justify-center p-6">
+        <div class="form-container bg-slate-50 rounded-md w-96 space-y-4 flex flex-col p-4 justify-center items-center shadow-md shadow-white gap-4">
+            <h1 class="text-5xl text-center">Create Profile</h1>
+            <form action="\submit" method="GET" required class="p-5 pr-7" id="form">
+                <input type="text" name="name" required placeholder="Lucky" class="border rounded-md p-2 m-2 inline-block w-full">
+                <input type="text" name="l_name" required placeholder="Kumar" class="border rounded-md p-2 m-2 inline-block w-full">
+                <input type="text" name="url" required placeholder="your custom link" class="border rounded-md p-2 m-2 inline-block w-full">
+                <input type="file" name="user-img" required class="border rounded-md p-2 m-2 inline-block w-full">
+                <textarea name="description" required placeholder="About You" class="border rounded-md p-2 m-2 inline-block w-full" cols="30" rows="3"></textarea>
+                <button type="submit" value="submit" class="bg-blue-600 text-white p-4 border rounded-t items-center w-full">Generate your profile card</button>
+            </form>
+        </div>
+
+         <div class="card bg-[#ebebeb] rounded-lg flex items-center flex-col justify-center gap-4 hidden" >
+           
+         </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
