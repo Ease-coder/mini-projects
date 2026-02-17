@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[#060b38] flex items-center justify-center py-32">
+    <div id="calculator" class="flex flex-col justify-center items-center w-96 h-auto rounded-2xl p-8 bg-[#e2dbcc]">
+        <h1 class="font-semibold text-center text-[2rem]">Loan Emi calculator</h1>
+
+        <form action="\submit" method="post" id="form" class="gap-5">
+            <label for="loan_amt">Loan Amount (₹)</label> <br>
+            <input type="text" name="loan_amt" id="loan_amt" placeholder="Amount" class="p-2 m-2 shadow-md border-2 border-[#b8b8b8] rounded-lg"> <br><br>
+
+            <label for="int">Intrest Rate (% per year)</label>
+            <input type="text" name="int" id="int" placeholder="interest rate (5.00)" class="p-2 m-2 shadow-md border-2 border-[#b8b8b8] rounded-lg""><br><br>
+
+            <label for="loan_tenure">Loan Tenure</label><br>
+            <input type="text" name="loan_tenure" id="loan_tenure" placeholder="Years" class="p-2 m-2 shadow-md border-2 border-[#b8b8b8] rounded-lg"><br><br>
+
+            <button class="bg-[#6c6ceb] p-3 rounded-lg px-8">Calculate EMI</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
